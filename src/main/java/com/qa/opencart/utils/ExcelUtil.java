@@ -37,8 +37,6 @@ public class ExcelUtil {
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		} catch (InvalidFormatException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
