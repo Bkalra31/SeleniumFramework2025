@@ -27,7 +27,7 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-   <!-- Selenium-Java -->
+	<!-- Selenium-Java -->
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -101,7 +101,7 @@
 				</configuration>
 			</plugin>
 
-
+			<!-- Surefire Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
