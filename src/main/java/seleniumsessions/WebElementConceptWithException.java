@@ -13,12 +13,12 @@ public class WebElementConceptWithException {
 
 		driver = new ChromeDriver();// 123
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
-//
-//		try {
-//			driver.findElement(By.id("input-email11")).sendKeys("test@gmail.com");
-//		} catch (NoSuchElementException e) {
-//			e.printStackTrace();
-//		}
+
+		try {
+			driver.findElement(By.id("input-email11")).sendKeys("test@gmail.com");
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+		}
 
 		// NSE
 
