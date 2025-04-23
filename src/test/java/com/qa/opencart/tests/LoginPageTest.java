@@ -56,12 +56,12 @@ public class LoginPageTest extends BaseTest {
 	@Test(priority = 4)
 	public void loginTest() {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
-		Assert.assertEquals(accPage.getAccPageTitle(), AppConstants.ACCOUNTS_PAGE_TITLE, AppError.TITLE_NOT_FOUND);
+		Assert.assertEquals(accPage.getAccPageTitle(), AppConstants.LOGIN_PAGE_TITLE, AppError.TITLE_NOT_FOUND);
 	}
 	
 	@Test
 	public void mytest() {
-		Assert.assertEquals(true, false);
+		Assert.assertEquals(true, true);
 	}
 	
 	

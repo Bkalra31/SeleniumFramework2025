@@ -1,0 +1,408 @@
+<html>
+<head>
+<title>TestNG:  Login Page Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Page Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 23 20:48:13 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15273 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageHeadersTest()'><b>accPageHeadersTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>java.lang.AssertionError: ====LIST IS NOT MATCHED OR EMPTY: lists don&apos;t have the same size expected [4] but found [2]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:1019)
+	at com.qa.opencart.tests.AccountsPageTest.accPageHeadersTest(AccountsPageTest.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div><a href='#' onClick='toggleBox("stack-trace414514533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace414514533'><pre>java.lang.AssertionError: ====LIST IS NOT MATCHED OR EMPTY: lists don&apos;t have the same size expected [4] but found [2]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:1019)
+	at com.qa.opencart.tests.AccountsPageTest.accPageHeadersTest(AccountsPageTest.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.AccountsPageTest@1f2f9244</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageTitleTest()'><b>accPageTitleTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td><div><pre>java.lang.AssertionError: ====TITLE NOT FOUND===== expected [My Account] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.qa.opencart.tests.AccountsPageTest.accPageTitleTest(AccountsPageTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1966603289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1966603289'><pre>java.lang.AssertionError: ====TITLE NOT FOUND===== expected [My Account] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at com.qa.opencart.tests.AccountsPageTest.accPageTitleTest(AccountsPageTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>5</td>
+<td>com.qa.opencart.tests.AccountsPageTest@1f2f9244</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.LoginPageTest.mytest()'><b>mytest</b><br>Test class: com.qa.opencart.tests.LoginPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.qa.opencart.tests.LoginPageTest.mytest(LoginPageTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div><a href='#' onClick='toggleBox("stack-trace235442521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace235442521'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:751)
+	at org.testng.Assert.assertEquals(Assert.java:761)
+	at com.qa.opencart.tests.LoginPageTest.mytest(LoginPageTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.tests.LoginPageTest@4c398c80</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.accPageURLTest()'><b>accPageURLTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.qa.opencart.tests.AccountsPageTest@1f2f9244</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.LoginPageTest.forgotPwdLinkExistTest()'><b>forgotPwdLinkExistTest</b><br>Test class: com.qa.opencart.tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.LoginPageTest@4c398c80</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.qa.opencart.tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.LoginPageTest@4c398c80</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.LoginPageTest.loginPageURLTest()'><b>loginPageURLTest</b><br>Test class: com.qa.opencart.tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.tests.LoginPageTest@4c398c80</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.qa.opencart.tests.LoginPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.qa.opencart.tests.LoginPageTest@4c398c80</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: macbook, MacBook Pro</td>
+<td></td>
+<td>3</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: imac, iMac</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: samsung, Samsung SyncMaster 941BW</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productHeaderTest()'><b>productHeaderTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: canon, Canon EOS 5D</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: macbook, MacBook Pro, 4</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: imac, iMac, 3</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: samsung, Samsung SyncMaster 941BW, 1</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: samsung, Samsung Galaxy Tab 10.1, 7</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productImagesCountTest()'><b>productImagesCountTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest<br>Parameters: canon, Canon EOS 5D, 3</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.ProductInfoPageTest.productInfoTest()'><b>productInfoTest</b><br>Test class: com.qa.opencart.tests.ProductInfoPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.tests.ProductInfoPageTest@4ee37ca3</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest<br>Parameters: macbook, 3</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.AccountsPageTest@1f2f9244</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest<br>Parameters: imac, 1</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.AccountsPageTest@1f2f9244</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest<br>Parameters: samsung, 2</td>
+<td></td>
+<td>1</td>
+<td>com.qa.opencart.tests.AccountsPageTest@1f2f9244</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.AccountsPageTest.searchTest()'><b>searchTest</b><br>Test class: com.qa.opencart.tests.AccountsPageTest<br>Parameters: Airtel, 0</td>
+<td></td>
+<td>11</td>
+<td>com.qa.opencart.tests.AccountsPageTest@1f2f9244</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: Arti, automation, 98765456765, arti@123, yes</td>
+<td></td>
+<td>5</td>
+<td>com.qa.opencart.tests.RegisterPageTest@22b53226</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: Praful, automation, 98765456788, praful@123, no</td>
+<td></td>
+<td>6</td>
+<td>com.qa.opencart.tests.RegisterPageTest@22b53226</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: Madhu, automation, 99765456788, madhu@123, yes</td>
+<td></td>
+<td>5</td>
+<td>com.qa.opencart.tests.RegisterPageTest@22b53226</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: Tom, automation, 98765456701, praful@123, no</td>
+<td></td>
+<td>5</td>
+<td>com.qa.opencart.tests.RegisterPageTest@22b53226</td></tr>
+<tr>
+<td title='com.qa.opencart.tests.RegisterPageTest.userRegisterationTest()'><b>userRegisterationTest</b><br>Test class: com.qa.opencart.tests.RegisterPageTest<br>Parameters: Peter, automation, 99765456702, madhu@123, yes</td>
+<td></td>
+<td>6</td>
+<td>com.qa.opencart.tests.RegisterPageTest@22b53226</td></tr>
+</table><p>
+</body>
+</html>
