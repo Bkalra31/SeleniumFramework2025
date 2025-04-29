@@ -141,7 +141,7 @@
 				</executions>
 
 			</plugin>
-
+			<!--	deployment to nexus/maven -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
